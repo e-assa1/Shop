@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleShop CI - Boutique en Ligne</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- entete ou debut de code -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#accueil">
+                <i class="fas fa-shopping-bag me-2"></i>StyleShop CI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- je crée une liste non ordonée afin d'en faire un mnu déroulant -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produits">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apropos">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> <span class="badge bg-primary">3</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+    <!-- le corp du site -->
+    <section id="accueil" class="hero-section">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">StyleShop CI</h1>
+                    <!-- les différentes classes permettent pourvoir décorer plus spécifiquement les paragraphes -->
+                    <p class="lead">Découvrez notre collection exclusive de mode et accessoires en Côte d'Ivoire</p>
+                    <p class="mb-4">Qualité premium, style africain moderne et livraison rapide à Abidjan</p>
+                    <div class="hero-buttons">
+                        <!-- le a permet de rendre un élément cliquable -->
+                        <a href="#produits" class="btn btn-primary-custom btn-lg me-3">
+                            <i class="fas fa-shopping-bag me-2"></i>Découvrir nos Produits
+                        </a>
+                        <a href="#apropos" class="btn btn-outline-custom btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>En savoir plus
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <!-- img permet de d'insérer une image en donnant sa source et en la décrivant avec alt -->
+
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="plusieurs vetements" class="img-fluid rounded shadow-lg" style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section id="produits" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Nos Produits Populaires</h2>
+                    <p class="lead">Découvrez notre sélection de produits tendance</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Produit 1 -->
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="card product-card position-relative">
+                        <span class="badge-new">Nouveau</span>
+                        <img src="image robe.jpg" class="card-img-top" alt="Robe Wax">
+                        <div class="card-body p-4">
+                            <h5 class="product-title">Robe Wax Élégante</h5>
+                            <p class="product-description">Robe en tissu wax authentique, coupe moderne et confortable pour toutes occasions.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">25 000 FCFA</span>
+                                <button class="btn btn-outline-custom btn-sm">
+                                    <i class="fas fa-cart-plus"></i> Acheter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 2 -->
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="card product-card position-relative">
+                        <span class="badge-sale">-10%</span>
+                        <img src="image chemise.jpg" class="card-img-top" alt="Chemise Homme">
+                        <div class="card-body p-4">
+                            <h5 class="product-title">Chemise Homme Chic</h5>
+                            <p class="product-description">Chemise en coton de qualité supérieure, parfaite pour le bureau ou les sorties.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">18 000 FCFA</span>
+                                <button class="btn btn-outline-custom btn-sm">
+                                    <i class="fas fa-cart-plus"></i> Acheter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 3 -->
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="card product-card">
+                         <span class="badge-new">Nouveau</span>
+                        <img src="image Sneakers.jpg" class="card-img-top" alt="Sneakers">
+                        <div class="card-body p-4">
+                            <h5 class="product-title">Sneakers Tendance</h5>
+                            <p class="product-description">Baskets modernes et confortables, idéales pour un look décontracté et stylé.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">45 000 FCFA</span>
+                                <button class="btn btn-outline-custom btn-sm">
+                                    <i class="fas fa-cart-plus"></i> Acheter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 4 -->
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="card product-card">
+                        <img src="image sac a main.jpg" class="card-img-top" alt="Sac à main">
+                        <div class="card-body p-4">
+                            <h5 class="product-title">Sac à Main Design</h5>
+                            <p class="product-description">Sac en cuir véritable avec finitions soignées, accessoire indispensable.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">29 900 FCFA</span>
+                                <button class="btn btn-outline-custom btn-sm">
+                                    <i class="fas fa-cart-plus"></i> Acheter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 5 -->
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="card product-card">
+                        <img src="image bijoux africains.jpg" class="card-img-top" alt="Bijoux">
+                        <div class="card-body p-4">
+                            <h5 class="product-title">Bijoux Africains</h5>
+                            <p class="product-description">Collection de bijoux inspirés des traditions africaines avec une touche moderne.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">15 000 FCFA</span>
+                                <button class="btn btn-outline-custom btn-sm">
+                                    <i class="fas fa-cart-plus"></i> Acheter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 6 -->
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="card product-card position-relative">
+                        <span class="badge-new">Nouveau</span>
+                        <img src="image chaussure de sport.jpg" class="card-img-top" alt="Chaussures">
+                        <div class="card-body p-4">
+                            <h5 class="product-title">Chaussures de Sport</h5>
+                            <p class="product-description">Chaussures de sport haute performance pour vos activités quotidiennes.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">35 000 FCFA</span>
+                                <button class="btn btn-outline-custom btn-sm">
+                                    <i class="fas fa-cart-plus"></i> Acheter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 7 -->
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="card product-card">
+                        <img src="imag montre.jpg" class="card-img-top" alt="Montre">
+                        <div class="card-body p-4">
+                            <h5 class="product-title">Montre Élégante</h5>
+                            <p class="product-description">Montre avec bracelet en cuir, parfaite pour compléter votre style.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">20 000 FCFA</span>
+                                <button class="btn btn-outline-custom btn-sm">
+                                    <i class="fas fa-cart-plus"></i> Acheter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 8 -->
+                <div class="col-lg-3 col-md-6 fade-in">
+                    <div class="card product-card position-relative">
+                        <span class="badge-sale">-10%</span>
+                        <img src="image lunette  de soleil.jpg" class="card-img-top" alt="Lunettes">
+                        <div class="card-body p-4">
+                            <h5 class="product-title">Lunettes de Soleil</h5>
+                            <p class="product-description">Protection UV optimale avec un design moderne et sophistiqué.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">15 000 FCFA</span>
+                                <button class="btn btn-outline-custom btn-sm">
+                                    <i class="fas fa-cart-plus"></i> Acheter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary-custom btn-lg">
+                    <i class="fas fa-th-large me-2"></i>Voir tous nos produits
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-in">
+                    <h2 class="section-title text-start">À propos de StyleShop CI</h2>
+                    <p class="lead">Votre destination mode en Côte d'Ivoire depuis 2020</p>
+                    <p>Chez StyleShop CI, nous sommes passionnés par la mode africaine contemporaine. Notre mission est de vous offrir des vêtements et accessoires de qualité qui reflètent votre personnalité et votre style unique.</p>
+                    <p>Nous travaillons avec des créateurs locaux et internationaux pour vous proposer une sélection exclusive qui allie tradition africaine et tendances modernes.</p>
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-shipping-fast text-primary me-3 fs-4"></i>
+                                <div>
+                                    <h6 class="mb-1">Livraison Rapide</h6>
+                                    <small class="text-muted">24-48h à Abidjan</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-award text-primary me-3 fs-4"></i>
+                                <div>
+                                    <h6 class="mb-1">Qualité Garantie</h6>
+                                    <small class="text-muted">Produits authentiques</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-in">
+                    <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="À propos" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-white">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4">
+                        <i class="fas fa-shopping-bag me-2" style="color: var(--primary-color);"></i>
+                        StyleShop CI
+                    </h5>
+                    <p>Votre boutique en ligne de référence en Côte d'Ivoire pour la mode et les accessoires de qualité.</p>
+                    <div class="footer-links">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Navigation</h6>
+                    <div class="footer-links">
+                        <p><a href="#accueil">Accueil</a></p>
+                        <p><a href="#produits">Produits</a></p>
+                        <p><a href="#apropos">À propos</a></p>
+                        <p><a href="#contact">Contact</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Catégories</h6>
+                    <div class="footer-links">
+                        <p><a href="#">Mode Femme</a></p>
+                        <p><a href="#">Mode Homme</a></p>
+                        <p><a href="#">Accessoires</a></p>
+                        <p><a href="#">Chaussures</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <p><i class="fas fa-map-marker-alt me-2" style="color: var(--primary-color);"></i> Abidjan, Cocody Val Doyen </p>
+                    <p><i class="fas fa-phone me-2" style="color: var(--primary-color);"></i> +225 01 01 16 63 76</p>
+                    <p><i class="fas fa-envelope me-2" style="color: var(--primary-color);"></i> info@styleshopci.com</p>
+                    <p><i class="fas fa-clock me-2" style="color: var(--primary-color);"></i> Lun-Sam: 8h-18h</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row py-3">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 StyleShop CI. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="footer-links">
+                        <a href="#" class="me-3">Politique de confidentialité</a>
+                        <a href="#" class="me-3">CGV</a>
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="emmanuel">
+            <p>
+                Nous avons crée ce site etant passionnés de mode afin de mettre en avant la class et l'elegance.
+            </p>
+            
+        </div>
+    </footer>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script JavaScript personnalisé -->
+    <script>
+        // Animation fluide pour les liens de navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animation au scroll pour les éléments fade-in
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observer tous les éléments avec la classe fade-in
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Effet de transparence de la navbar au scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Simulation d'ajout au panier
+        document.querySelectorAll('.btn-outline-custom').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Animation du bouton
+                this.innerHTML = '<i class="fas fa-check"></i> Ajouté !';
+                this.classList.remove('btn-outline-custom');
+                this.classList.add('btn-success');
+                
+                // Mettre à jour le compteur du panier
+                const cartBadge = document.querySelector('.badge');
+                let currentCount = parseInt(cartBadge.textContent);
+                cartBadge.textContent = currentCount + 1;
+                
+                // Remettre le bouton à l'état initial après 2 secondes
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-cart-plus"></i> Acheter';
+                    this.classList.remove('btn-success');
+                    this.classList.add('btn-outline-custom');
+                }, 2000);
+                
+                // Notification
+                alert('Produit ajouté au panier !');
+            });
+        });
+    </script>
+</body>
